@@ -17,6 +17,7 @@ import "./screens/appshell/BugModal.scss";
 import "./screens/appshell/BugModal.scss";
 import "../integrations/ethereum/renderer/screens/accounts/AccountsScreen.scss";
 import "../integrations/ethereum/renderer/screens/accounts/AccountList.scss";
+import "../integrations/ethereum/renderer/screens/accounts/CopyButton.scss";
 import "../integrations/ethereum/renderer/screens/accounts/KeyModal.scss";
 import "../integrations/ethereum/renderer/screens/accounts/MnemonicAndHdPath.scss";
 import "../integrations/ethereum/renderer/screens/accounts/MnemonicInfoModal.scss";

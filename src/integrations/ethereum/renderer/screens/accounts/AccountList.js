@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
 import KeyModal from "./KeyModal";
-
 import ChecksumAddress from "../../components/checksum-addresses/ChecksumAddress";
 import OnlyIf from "../../../../../renderer/components/only-if/OnlyIf";
 import FormattedEtherValue from "../../components/formatted-ether-value/FormattedEtherValue";
 import KeyIcon from "../../../../../renderer/icons/key.svg";
+import CopyButton from "./CopyButton";
 
 class AccountList extends Component {
   constructor(props) {
@@ -40,16 +40,15 @@ class AccountList extends Component {
           <div className="AddressAndBalance">
             <div className="AccountAddress">
               <div className="Label">ADDRESS</div>
-              <div className="Value">
+              <div className="CpyValue">
                 <ChecksumAddress address={account} />
+                <CopyButton text={account} /> 
               </div>
             </div>
             <div className="AccountBalance">
               <div className="Label">BALANCE</div>
               <div className="Value">
-                { balance ? <FormattedEtherValue
-                  value={balance.toString()}
-                /> : "" }
+                {balance ? <FormattedEtherValue value={balance.toString()} /> : ""}
               </div>
             </div>
           </div>
